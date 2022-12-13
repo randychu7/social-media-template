@@ -5,10 +5,6 @@ body {
     margin: 0;
     padding: 0;
 }
-textarea {
-        width: 250px;
-        height: 150px;
-}
 
 header {
     background-color: #606060;
@@ -54,11 +50,13 @@ form {
 }
 
 form input, form textarea {
-    width: 100%;
+
     padding: 10px;
     margin-bottom: 10px;
     box-sizing: border-box;
     font-size: 14px;
+    width: 250px;
+    height: 150px;
 }
 
 form input[type="submit"] {
@@ -98,10 +96,13 @@ img {
         height: 100%;
         backdrop-filter: blur(6px);
         -webkit-backdrop-filter: blur(6px);
-        background: rgb(29, 148, 255);
+        background: rgba(0, 0, 0, 0.97);
         box-shadow: 0 8px 32px rgba(7, 8, 52, 0.81);
         border-right: 2px solid rgba(255, 255, 255, .09);
         transition: .4s ease-in-out;
+        opacity: 60%;
+
+
     }
 
     .sidebar.open {
@@ -123,7 +124,7 @@ img {
     }
 
     .sidebar.open .logo img {
-        width: 96px;
+        width: 60px;
     }
 
     .sidebar .logo h3 {
